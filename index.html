@@ -24,7 +24,7 @@
     <title>Studio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html" rel="noopener noreferrer nofollow"
@@ -53,22 +53,84 @@
           </ul>
         </address>
         <div class="menu">
-          <button class="menu-button btn" type="button">
+          <button class="menu-button btn" data-menu-open type="button">
             <svg class="menu-icon" width="32" height="22">
               <use href="./images/icons.svg#icon-menu-hamburger"></use>
             </svg>
           </button>
         </div>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" data-menu-close class="menu-close-btn btn">
+              <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-btn"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="./index.html" rel="noopener noreferrer nofollow">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html" rel="noopener noreferrer nofollow">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="" rel="noopener noreferrer nofollow">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mob-menu-address-list list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-tel link" href="tel:+110001111111" rel="noopener noreferrer nofollow">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-mail link" href="mailto:info@devstudio.com" rel="noopener noreferrer nofollow">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
-      <!-- <section class="about">
+      </section>
+      <section class="about">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="about-list list">
@@ -112,8 +174,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="ability">
+      </section>
+      <section class="ability">
         <div class="container">
           <h2 class="ability-title">What are we doing</h2>
           <ul class="ability-list list">
@@ -128,10 +190,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="team">
+      </section>
+      <section class="team">
         <div class="container">
-          <h2 class="team-title">our team</h2>
+          <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img src="./images/main-page/team-1.jpg" alt="Mark Guerrero" width="264" />
@@ -286,8 +348,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="customers">
+      </section>
+      <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -335,9 +397,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <a class="footer-logo link" href="./index.html" rel="noopener noreferrer nofollow"
@@ -391,8 +453,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <div class="backdrop" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -452,6 +514,13 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
-    <script src="./modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

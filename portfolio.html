@@ -18,6 +18,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -49,6 +52,75 @@
             </li>
           </ul>
         </address>
+        <div class="menu">
+          <button class="menu-button btn" type="button">
+            <svg class="menu-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" data-menu-close class="menu-close-btn btn">
+              <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-btn"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./index.html" rel="noopener noreferrer nofollow">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="./portfolio.html" rel="noopener noreferrer nofollow">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="" rel="noopener noreferrer nofollow">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mob-menu-address-list list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-tel link" href="tel:+110001111111" rel="noopener noreferrer nofollow">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-mail link" href="mailto:info@devstudio.com" rel="noopener noreferrer nofollow">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link" rel="noopener noreferrer nofollow">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -272,5 +344,6 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
