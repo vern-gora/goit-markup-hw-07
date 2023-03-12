@@ -36,6 +36,8 @@
   /* ---------- HERO ---------- */
 
   .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)), url(../images/main-page/bg-tab-1x.jpg);
   }
 
@@ -43,6 +45,13 @@
     .hero {
       background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)), url(../images/main-page/bg-tab-2x.jpg);
     }
+  }
+
+  .hero-title {
+    width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
   }
 
   /* ---------- ABOUT ---------- */

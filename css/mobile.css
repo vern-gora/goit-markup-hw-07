@@ -3,6 +3,14 @@
     max-width: 428px;
   }
 
+  /* ---------- MENU ---------- */
+
+  @media screen and (min-width: 450px) {
+    .mob-menu-tel {
+      font-size: 36px;
+    }
+  }
+
   /* ---------- TEAM ---------- */
 
   .team > .container {

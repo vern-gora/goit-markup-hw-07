@@ -140,9 +140,6 @@ body {
   display: none;
 }
 
-.header-item {
-}
-
 .header-link {
   display: flex;
   position: relative;
@@ -251,16 +248,11 @@ body {
   color: var(--dark-color);
 }
 
-.mob-menu-address-list {
-}
-.mob-menu-address-item {
-}
-
 .mob-menu-tel {
-  display: block;
+  display: flex;
   margin-bottom: 40px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 22px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -278,7 +270,7 @@ body {
 .mob-soc-list {
   margin-top: 42px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .mob-soc-item {
   height: 40px;
@@ -375,9 +367,6 @@ body {
   display: none;
 }
 
-.about-item-icon {
-}
-
 .about-title {
   text-align: center;
   margin-bottom: 8px;
@@ -417,9 +406,6 @@ body {
   gap: 24px;
 }
 
-.ability-item {
-}
-
 /* ---------- TEAM ---------- */
 
 .team {
@@ -443,17 +429,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 .team-item {
-  width: 100%;
+  max-width: 264px;
   background-color: var(--main-title-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item img {
-  width: 100%;
 }
 
 .team-person {
@@ -645,9 +628,6 @@ body {
 .footer-soc-link:focus,
 .footer-soc-link:hover {
   background-color: var(--success-color);
-}
-
-.footer-soc-icon {
 }
 
 .footer-container-email-input {
@@ -899,7 +879,7 @@ body {
   color: #757575;
 }
 
-.check-text span {
+.check-text .policy-check {
   width: 16px;
   height: 16px;
   border: 1.25px solid var(--dark-color);
@@ -911,7 +891,7 @@ body {
   fill: transparent;
 }
 
-.input-check:checked + .check-text span {
+.input-check:checked + .check-text .policy-check {
   background-color: var(--pressed-state-color);
   fill: var(--light-color);
   border: none;
@@ -964,8 +944,6 @@ body {
   padding: 0px;
   gap: 24px;
   margin-bottom: 48px;
-}
-.portfolio-filter-item {
 }
 
 .portfolio-btn {
